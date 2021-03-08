@@ -1,0 +1,16 @@
+.wrapper {
+    // background-color: aqua;
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+    "player";
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+}
+
+.player{
+    grid-area: player;
+    background-color: rgb(204, 0, 255);
+    padding: 10px;
+}
