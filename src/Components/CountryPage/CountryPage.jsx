@@ -1,8 +1,8 @@
 import CountryPageHeader from './CountryPageHeader'
-import CountryInfo from './CountryInfo'
-import CountryGallery from './CountryGallery'
-import CountryMovie from './CountryMovie'
-import CountryMap from './CountryMap'
+import CountryInfo from './Description/CountryInfo'
+import CountryGallery from './Gallery/CountryGallery'
+import CountryMovie from './Movie/CountryMovie'
+import CountryMap from './Map/CountryMap'
 import Footer from './../Footer/Footer'
 
 
