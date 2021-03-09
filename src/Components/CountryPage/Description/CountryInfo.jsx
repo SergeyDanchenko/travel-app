@@ -1,7 +1,7 @@
 import { Container, Image } from 'react-bootstrap';
 import CountryDescription from './CountryDescription.module.scss';
 
-import belarusImg from './../../../assets/images/belarusImg.jpg'
+import belarusImg from './../../../assets/images/Belarus/belarusImg.jpg'
 
 function CountryInfo() {
     return (

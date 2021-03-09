@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 // import App from './App';
 import CountryPage from './Components/CountryPage/CountryPage'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import "react-image-gallery/styles/scss/image-gallery.scss";
 
 import './index.scss';
 
