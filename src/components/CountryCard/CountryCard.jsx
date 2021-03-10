@@ -1,12 +1,12 @@
 import React from 'react';
-import counrty from '../../assets/images/london1.jpg'
+
 
 import './CountryCard.scss';
 
 const CountryCard = (props) => {
 
   const style = {
-    backgroundImage: `url(${counrty})`,
+    backgroundImage: `url(${props.countryImg})`,
   };
 
   return (
