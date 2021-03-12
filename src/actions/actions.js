@@ -1,0 +1,1 @@
+export const onCountryCardClick = (payload) => ({ type: 'ON_COUNTRY_CARD_CLICK', payload });
