@@ -1,29 +1,39 @@
 import React from 'react';
 import CountryCard from '../CountryCard/CountryCard';
-import uk from '../../assets/images/london1.jpg';
-import italy from '../../assets/images/italy1.jpg';
-import belarus from '../../assets/images/belarus1.jpg';
-import germany from '../../assets/images/germany1.jpg';
-import france from '../../assets/images/france1.jpg';
-import egypt from '../../assets/images/egypt1.jpg';
-import usa from '../../assets/images/usa1.jpg';
-import switzerland from '../../assets/images/switzerland1.jpg';
+import { connect } from 'react-redux';
+import { onCountryCardClick } from '../../actions/actions';
 
 import './Cards.scss';
 
-const Cards = () => {
+const Cards = ({ countries, onCardClick }) => {
   return (
     <div className='cards-wrapper'>
-      <CountryCard countryImg={uk} country='United Kingdom' capital='London'/>
-      <CountryCard countryImg={italy} country='Italy' capital='Rome'/>
-      <CountryCard countryImg={belarus} country='Belarus' capital='Minsk'/>
-      <CountryCard countryImg={germany} country='Germany' capital='Berlin'/>
-      <CountryCard countryImg={france} country='France' capital='Paris'/>
-      <CountryCard countryImg={egypt} country='Egypt' capital='Cairo'/>
-      <CountryCard countryImg={usa} country='USA' capital='Washington'/>
-      <CountryCard countryImg={switzerland} country='Switzerland' capital='Bern'/>
+      {countries.map((countryData) => {
+        return (
+          <CountryCard 
+            key={countryData.id} 
+            country={countryData.name} 
+            capital={countryData.capital} 
+            countryImg={countryData.cardImg}
+            onCardClick={onCardClick}
+            cardId={countryData.id}
+          />
+        );
+      })}
     </div>
   );
 };
 
-export default Cards;
+const mapStateToProps = (state) => {
+  return {
+    countries: state.countriesData,
+  }
+};
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onCardClick: (payload) => dispatch(onCountryCardClick(payload)),
+  };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Cards);

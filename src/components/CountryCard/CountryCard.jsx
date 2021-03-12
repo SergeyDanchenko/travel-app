@@ -1,22 +1,28 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 import './CountryCard.scss';
 
-const CountryCard = (props) => {
+const CountryCard = ({country, capital, countryImg, onCardClick, cardId}) => {
 
   const style = {
-    backgroundImage: `url(${props.countryImg})`,
+    backgroundImage: `url(${countryImg})`,
+  };
+
+  const onClick = () => {
+    onCardClick(cardId);
   };
 
   return (
-    <div className='country-card-wrapper'>
-      <div className='country-img' style={style}/>
-      <div class='title-wrapper'>
-        <div className="title">{props.country}</div>
-        <div className="subtitle">{props.capital}</div>
+    <Link to='/country'>
+      <div className='country-card-wrapper' onClick={onClick}>
+        <div className='country-img' style={style} />
+        <div className='title-wrapper'>
+          <div className="title">{country}</div>
+          <div className="subtitle">{capital}</div>
+        </div>
       </div>
-    </div>
+    </Link>
   );
 };
 

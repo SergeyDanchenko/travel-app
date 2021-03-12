@@ -4,12 +4,16 @@ import CountryGallery from './Gallery/CountryGallery'
 import CountryMovie from './Movie/CountryMovie'
 import CountryMap from './Map/CountryMap'
 import Footer from './../Footer/Footer'
-
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
+import { connect } from 'react-redux';
+import { getCountryObjectById } from '../../helpFunctions/helpFunctions';
 import { Container } from 'react-bootstrap';
 
-function CountryPage() {
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+function CountryPage({ countryObj }) {
+
+    console.log(countryObj);
+
     return (
         <Container>
             {/* Hi */}
@@ -24,4 +28,10 @@ function CountryPage() {
     )
 }
 
-export default CountryPage;
+const mapStateToProps = (state) => {
+    return {
+        countryObj: getCountryObjectById(state.countriesData, state.pickedCountryCardId),
+    };
+};
+
+export default connect(mapStateToProps)(CountryPage);
