@@ -21,7 +21,7 @@ const counrtiesData = [
           type: "Point"
       },
       cardImg: belarus,
-      imageUrl: "./images/Belarus/belarusImg.jpg",
+      imageUrl: "https://president.gov.by/content-pages/belarus/regions/image-thumb__18535__block-right-left/vechernii-minsk.jpg",
       imageGallery: [
           {
               original: "./images/Belarus/BrestHeroFortress.jpg",
@@ -77,7 +77,7 @@ const counrtiesData = [
           type: "Point"
       },
       cardImg: egypt,
-      imageUrl: "https://static.wikia.nocookie.net/assassinscreed/images/9/99/ACE_LandmarkComparisons_Sphinx2.jpg/revision/latest?cb=20171004204710",
+      imageUrl: "https://airlinestravel.ro/wp-content/uploads/2020/08/conditii-calatorie-romania-egipt.jpg",
       imageGallery: [
           {
               original: "https://www.planetware.com/photos-large/EGY/egypt-cairo-pyramids-of-giza-and%20camels-2.jpg",

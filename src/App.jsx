@@ -1,7 +1,7 @@
-import Cards from './components/Cards/Cards';
+import Cards from './Components/Cards/Cards';
 import {Container} from 'react-bootstrap';
-import Footer from './components/Footer/Footer';
-import CountryPage from './components/CountryPage/CountryPage';
+import Footer from './Components/Footer/Footer';
+import CountryPage from './Components/CountryPage/CountryPage';
 import {HashRouter as Router, Route} from 'react-router-dom';
 
 import 'bootstrap/dist/css/bootstrap.min.css';

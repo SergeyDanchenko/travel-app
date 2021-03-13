@@ -13,12 +13,16 @@ import { Container } from 'react-bootstrap';
 function CountryPage({ countryObj }) {
 
     console.log(countryObj);
-
+// debugger;
     return (
         <Container>
             {/* Hi */}
             <CountryPageHeader />
-            <CountryInfo />
+            <CountryInfo 
+                countryName={countryObj.name}
+                countryCapital={countryObj.capital}
+                countryImg={countryObj.imageUrl}
+                countryInfo={countryObj.description}/>
             <CountryGallery />
             <CountryMovie />
             <CountryMap />
