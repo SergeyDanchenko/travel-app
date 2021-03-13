@@ -24,7 +24,7 @@ function CountryPage({ countryObj }) {
                 countryImg={countryObj.imageUrl}
                 countryInfo={countryObj.description}/>
             <CountryGallery countryImgGallery={countryObj.imageGallery}/>
-            <CountryMovie />
+            <CountryMovie countryMovie={countryObj.videoUrl}/>
             <CountryMap />
             <Footer />
             {/* <div>FOOTER</div> */}
