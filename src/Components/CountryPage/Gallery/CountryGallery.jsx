@@ -53,10 +53,10 @@ const images = [
   },
 ];
 
-class CountryGallery extends React.Component {
-  render() {
-    return <ImageGallery items={images} />;
-  }
+function CountryGallery({countryImgGallery}) {
+    return (
+      <ImageGallery items={countryImgGallery} />
+    )  
 }
 
 export default CountryGallery;

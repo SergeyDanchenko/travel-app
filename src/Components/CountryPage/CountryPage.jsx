@@ -23,7 +23,7 @@ function CountryPage({ countryObj }) {
                 countryCapital={countryObj.capital}
                 countryImg={countryObj.imageUrl}
                 countryInfo={countryObj.description}/>
-            <CountryGallery />
+            <CountryGallery countryImgGallery={countryObj.imageGallery}/>
             <CountryMovie />
             <CountryMap />
             <Footer />
