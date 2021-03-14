@@ -3,6 +3,8 @@ import { MapContainer, TileLayer, Marker, GeoJSON  } from 'react-leaflet';
 import icon from '../../../assets/images/red-pushpin.png';
 import L from 'leaflet';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+import 'leaflet-fullscreen/dist/Leaflet.fullscreen.js';
+import 'leaflet-fullscreen/dist/leaflet.fullscreen.css';
 
 import 'leaflet/dist/leaflet.css';
 
@@ -26,7 +28,7 @@ function CountryMap({ countryObj }) {
     return (
         <div className={map.wrapper}>
             <div className={map.map}>
-                <MapContainer center={[longitude, latitude]} zoom={7} scrollWheelZoom={false}>
+                <MapContainer fullscreenControl={true} center={[longitude, latitude]} zoom={7} scrollWheelZoom={false}>
                     <TileLayer
                         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
