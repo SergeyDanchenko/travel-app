@@ -1,9 +1,9 @@
 
 import ReactPlayer from 'react-player'
 
-function Player() {
+function Player({countryMovie}) {
     return (
-        <ReactPlayer url='https://www.youtube.com/watch?v=LrIoX0UVeSk&ab_channel=DookInternationalTourism' 
+        <ReactPlayer url={countryMovie} 
         controls='true'
         width='100%'
         height='95%'

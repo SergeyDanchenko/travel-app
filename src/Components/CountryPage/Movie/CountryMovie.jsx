@@ -1,10 +1,10 @@
 import Player from './Player'
 import movie from './CountryMovie.module.scss'
 
-function CountryMovie() {
+function CountryMovie({countryMovie}) {
     return (
         <div className={movie.wrapper}>
-            <Player />
+            <Player countryMovie={countryMovie}/>
         </div>
     )
 }

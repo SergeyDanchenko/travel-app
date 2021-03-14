@@ -1,18 +1,18 @@
 import { Container, Image } from 'react-bootstrap';
 import CountryDescription from './CountryDescription.module.scss';
 
-import belarusImg from './../../../assets/images/Belarus/belarusImg.jpg'
+function CountryInfo({countryName, countryCapital, countryImg, countryInfo }) {
+// debugger;
 
-function CountryInfo() {
     return (
         <div className={CountryDescription.wrapper}>
             <Container className={CountryDescription.photo}>
-                <Image src={belarusImg} fluid rounded  />
+                <Image src={countryImg} fluid rounded  />
             </Container>
-            <Container className={CountryDescription.name}>Belarus</Container>
-            <Container className={CountryDescription.capital}>Minsk</Container>
+            <Container className={CountryDescription.name}>{ countryName }</Container>
+            <Container className={CountryDescription.capital}>{ countryCapital }</Container>
             <Container className={CountryDescription.widgets}>Widgets</Container>
-            <Container className={CountryDescription.info}>Info about</Container>
+            <Container className={CountryDescription.info}>{ countryInfo }</Container>
         </div>
     )
 }

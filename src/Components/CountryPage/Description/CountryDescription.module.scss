@@ -1,13 +1,13 @@
 .wrapper {
     // background-color: aqua;
-    height: 80vh;
+    min-height: 80vh;
     display: grid;
     grid-template-areas: 
     "photo name"
     "photo capital"
     "photo widgets"
-    "photo info";
-    grid-template-rows: 1fr 1fr 3fr 5fr;
+    "info info";
+    grid-template-rows: 1fr 1fr 3fr 3fr;
     grid-template-columns: 1fr 1fr;
     grid-gap: 10px;
 }
