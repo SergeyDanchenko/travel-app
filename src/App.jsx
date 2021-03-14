@@ -10,11 +10,11 @@ function App() {
 
   return (
     <Container>
-    <Router>
-      <Route path='/home' component={Cards} />
-      <Route path='/country' component={CountryPage} />
-      {/* <Footer /> */}
-    </Router>
+      <Router>
+        <Route path='/home' component={Cards} />
+        <Route path='/country' component={CountryPage} />      
+      </Router>
+      <Footer />
     </Container>
   );
 }

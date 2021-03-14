@@ -12,6 +12,8 @@ $footer_header_text_color_hover:#e1e5eb;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: $footer_header_color;
+    color:$footer_header_text_color;  
     padding: 10px 0;    
     
 }

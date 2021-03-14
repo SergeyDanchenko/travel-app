@@ -1,22 +1,15 @@
-import CountryPageHeader from './CountryPageHeader'
+import CountryPageHeader from './../Header/CountryPageHeader/CountryPageHeader'
 import CountryInfo from './Description/CountryInfo'
 import CountryGallery from './Gallery/CountryGallery'
 import CountryMovie from './Movie/CountryMovie'
 import CountryMap from './Map/CountryMap'
-import Footer from './../Footer/Footer'
 import { connect } from 'react-redux';
 import { getCountryObjectById } from '../../helpFunctions/helpFunctions';
-import { Container } from 'react-bootstrap';
-
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 function CountryPage({ countryObj }) {
-
     console.log(countryObj);
-// debugger;
     return (
-        <Container>
-            {/* Hi */}
+        <>
             <CountryPageHeader />
             <CountryInfo 
                 countryName={countryObj.name}
@@ -26,9 +19,7 @@ function CountryPage({ countryObj }) {
             <CountryGallery countryImgGallery={countryObj.imageGallery}/>
             <CountryMovie countryMovie={countryObj.videoUrl}/>
             <CountryMap countryObj={countryObj}/>
-            <Footer />
-            {/* <div>FOOTER</div> */}
-        </Container>
+        </>
     )
 }
 
