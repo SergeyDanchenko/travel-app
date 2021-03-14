@@ -1,12 +1,11 @@
-import SelectLanguage from '../SelectLanguage/SelectLanguage'
+import SelectLanguage from '../../SelectLanguage/SelectLanguage'
 import { Navbar } from 'react-bootstrap';
-import globeLogo from './../../assets/images/globeLogo.png'
-import header from './CountryPageHeader.module.scss'
+import globeLogo from './../../../assets/images/globeLogo.png'
 
 
-function CountryPageHeader() {
+function MainPageHeader() {
     return (
-        <Navbar bg="dark" variant="dark" className='justify-content-between'>
+      <Navbar bg="dark" variant="dark" className='justify-content-between'>
         <Navbar.Brand href="#home">
           <img
             alt="Globe Logo"
@@ -17,9 +16,10 @@ function CountryPageHeader() {
           />
          Travel-app
         </Navbar.Brand>
+        <div style={{color:'white'}}>Country search input </div>
         <SelectLanguage />
       </Navbar>
     )
 }
 
-export default CountryPageHeader;
+export default MainPageHeader;

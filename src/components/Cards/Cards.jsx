@@ -1,5 +1,7 @@
 import React from 'react';
 import CountryCard from '../CountryCard/CountryCard';
+import MainPageHeader from '../Header/MainPageHeader/MainPageHeader'
+
 import { connect } from 'react-redux';
 import { onCountryCardClick } from '../../actions/actions';
 
@@ -7,20 +9,23 @@ import './Cards.scss';
 
 const Cards = ({ countries, onCardClick }) => {
   return (
-    <div className='cards-wrapper'>
-      {countries.map((countryData) => {
-        return (
-          <CountryCard 
-            key={countryData.id} 
-            country={countryData.name} 
-            capital={countryData.capital} 
-            countryImg={countryData.cardImg}
-            onCardClick={onCardClick}
-            cardId={countryData.id}
-          />
-        );
-      })}
-    </div>
+    <>
+      <MainPageHeader />
+      <div className='cards-wrapper'>      
+        {countries.map((countryData) => {
+          return (
+            <CountryCard 
+              key={countryData.id} 
+              country={countryData.name} 
+              capital={countryData.capital} 
+              countryImg={countryData.cardImg}
+              onCardClick={onCardClick}
+              cardId={countryData.id}
+            />
+          );
+        })}
+      </div>
+    </>
   );
 };
 
