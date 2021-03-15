@@ -1,21 +1,20 @@
 .wrapper {
-    // background-color: aqua;
+    background: #ffffff2c;
     min-height: 80vh;
     display: grid;
     grid-template-areas: 
-    "photo name"
-    "photo capital"
-    "photo widgets"
-    "info info";
-    grid-template-rows: 1fr 1fr 3fr 3fr;
-    grid-template-columns: 1fr 1fr;
+    "photo name capital"
+    "photo widgets widgets"
+    "photo widgets widgets"
+    "info info info";
+    grid-template-rows: 1fr 3fr 2fr;
+    grid-template-columns: 5fr 1fr 2fr;
     grid-gap: 10px;
+    padding: 10px 20px;
 }
 
 .photo{
     grid-area: photo;
-    background-color: rgb(165, 255, 157);
-    padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -23,24 +22,41 @@
 
 .name{
     grid-area: name;
-    background-color: rgb(255, 236, 131);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 253, 253, 0.37);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 .capital{
     grid-area: capital;
-    background-color: rgb(231, 134, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(253, 253, 253, 0.37);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
+    font-size: 24px;
+    font-weight: 600;
+    border-radius: 5px;
 }
 
 .widgets{
     grid-area: widgets;
-    background-color: rgb(132, 161, 255);
+    background-color: rgba(253, 253, 253, 0.37);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 10px;
+    border-radius: 5px;
 }
 
 .info{
     grid-area: info;
-    background-color: rgb(255, 184, 126);
+    font-size: 20px;
     padding: 10px;
+    min-height: fit-content;
 }

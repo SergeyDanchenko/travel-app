@@ -1,6 +1,7 @@
 body {
-  margin: 0;
-  
+  background: rgb(50,53,196);
+background: linear-gradient(180deg, rgba(50,53,196,1) 0%, rgba(75,78,217,1) 23%, rgba(93,97,236,1) 100%);
+  margin: 0;  
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -19,4 +20,21 @@ code {
 
 .navbar {
   height: 5vh;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #5a5a5aea; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #222222;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #000000; 
+  cursor: pointer;
 }

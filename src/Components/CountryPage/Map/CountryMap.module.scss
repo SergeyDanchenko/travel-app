@@ -1,16 +1,9 @@
 .wrapper {
-    // background-color: aqua;
-    height: 80vh;
-    display: grid;
-    grid-template-areas: 
-    "map";
-    grid-template-rows: 1fr;
-    grid-template-columns: 1fr;
-    grid-gap: 10px;
+    height: 85vh;
+    background: #0000002c !important;
 }
 
 .map{
-    grid-area: map;
-    background-color: rgb(0, 255, 170);
-    padding: 10px;
+    height: 100%;
+    padding: 60px;
 }
