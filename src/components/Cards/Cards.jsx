@@ -6,12 +6,13 @@ import { connect } from 'react-redux';
 import { onCountryCardClick } from '../../actions/actions';
 
 import './Cards.scss';
+import { Container } from 'react-bootstrap';
 
 const Cards = ({ countries, onCardClick }) => {
   return (
-    <>
+    <div>
       <MainPageHeader />
-      <div className='cards-wrapper'>      
+      <Container className='cards-wrapper'>      
         {countries.map((countryData) => {
           return (
             <CountryCard 
@@ -24,8 +25,8 @@ const Cards = ({ countries, onCardClick }) => {
             />
           );
         })}
-      </div>
-    </>
+      </Container>
+    </div>
   );
 };
 

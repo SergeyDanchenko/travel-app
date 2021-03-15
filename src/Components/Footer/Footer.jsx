@@ -6,7 +6,7 @@ import YouTubeIcon from './../../assets/images/YouTube.svg'
 
 function Footer() {
     return (
-        <Container fluid className={`${footer.footer} `}>
+        <div fluid className={`${footer.footer} `}>
             <Container className={footer.container}>
                 <Nav className={footer.contactsContainer}
                     activeKey="/home"
@@ -36,6 +36,7 @@ function Footer() {
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
+                <div className={footer.logoYearContainer}>
                 <Nav className={footer.logoContainer}
                     activeKey="/home"
                     onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
@@ -47,8 +48,9 @@ function Footer() {
                     </Nav.Item>
                 </Nav>
                 <div className='year'>2021</div>
+                </div>
             </Container>
-        </Container>
+        </div>
     )
 }
 

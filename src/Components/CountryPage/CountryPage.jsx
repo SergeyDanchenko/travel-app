@@ -5,21 +5,24 @@ import CountryMovie from './Movie/CountryMovie'
 import CountryMap from './Map/CountryMap'
 import { connect } from 'react-redux';
 import { getCountryObjectById } from '../../helpFunctions/helpFunctions';
+import { Container } from 'react-bootstrap';
+
 
 function CountryPage({ countryObj }) {
-    console.log(countryObj);
     return (
-        <>
+        <div>
             <CountryPageHeader />
-            <CountryInfo 
-                countryName={countryObj.name}
-                countryCapital={countryObj.capital}
-                countryImg={countryObj.imageUrl}
-                countryInfo={countryObj.description}/>
-            <CountryGallery countryImgGallery={countryObj.imageGallery}/>
-            <CountryMovie countryMovie={countryObj.videoUrl}/>
-            <CountryMap countryObj={countryObj}/>
-        </>
+            <Container>
+                <CountryInfo 
+                    countryName={countryObj.name}
+                    countryCapital={countryObj.capital}
+                    countryImg={countryObj.imageUrl}
+                    countryInfo={countryObj.description}/>
+                <CountryGallery countryImgGallery={countryObj.imageGallery}/>
+                <CountryMovie countryMovie={countryObj.videoUrl}/>
+                <CountryMap countryObj={countryObj}/>
+            </Container>
+        </div>
     )
 }
 
