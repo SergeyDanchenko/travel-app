@@ -5,7 +5,8 @@ $footer_header_text_color_hover:#e1e5eb;
 .footer {
     display: grid;
     background-color: $footer_header_color;
-    color:$footer_header_text_color;    
+    color:$footer_header_text_color;   
+    
 }
 
 .container {
@@ -15,7 +16,7 @@ $footer_header_text_color_hover:#e1e5eb;
     background-color: $footer_header_color;
     color:$footer_header_text_color;  
     padding: 10px 0;    
-    
+    height: 6vh; 
 }
 
 .contactsContainer {
@@ -72,4 +73,10 @@ $footer_header_text_color_hover:#e1e5eb;
         transform: scale(1.1);
     }
 
+}
+
+@media (max-height: 849px) {
+    .logo {
+        width: 60px;
+    }
 }
