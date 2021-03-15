@@ -1,40 +1,44 @@
 import React from 'react'
+import { connect } from 'react-redux';
+import { useTranslation } from "react-i18next";
+import { onLanguageChange } from '../../actions/actions';
 
 import language from './SelectLanguage.module.scss'
 
+const SelectLanguage = ({ lang, onLanguage }) => {
 
-class SelectLanguage extends React.Component {
-    constructor(props) {
-      super(props);
-      this.state = {value: 'EN'};
-  
-      this.handleChange = this.handleChange.bind(this);
-      this.handleSubmit = this.handleSubmit.bind(this);
-    }
-  
-    handleChange(event) {
-      this.setState({value: event.target.value});
-    }
-  
-    handleSubmit(event) {
-      event.preventDefault();
-    }
-  
-    render() {
-      return (
-        <form onSubmit={this.handleSubmit} className={language.container}>
-          <label>
-            Language:
-            <select value={this.state.value} onChange={this.handleChange} className={language.select}>
-              <option value="english">EN</option>
-              <option value="russian">RU</option>
-              <option value="belorussian">BEL</option>
-            </select>
-          </label>
-          <input type="submit" value="Submit" />
-        </form>
-      );
-    }
+  const { t, i18n} = useTranslation();
+
+  const handleChange = (e) => {
+    localStorage.setItem('lang', e.target.value);
+    onLanguage(e.target.value);
+    i18n.changeLanguage(e.target.value);
   }
 
-  export default SelectLanguage;
+  return (
+    <form className={language.container}>
+      <label>
+        {t('language')}:
+        <select value={lang} onChange={(e) => handleChange(e)} className={language.select}>
+          <option value="en">EN</option>
+          <option value="ru">RU</option>
+          <option value="ua">UA</option>
+        </select>
+      </label>
+    </form>
+  );
+}
+
+const mapStateToProps = (state) => {
+  return {
+    lang: state.language,
+  }
+}
+
+const mapDispatchToProps = (dispatch) => {
+  return {
+    onLanguage: (payload) => dispatch(onLanguageChange(payload)), 
+  }
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(SelectLanguage);

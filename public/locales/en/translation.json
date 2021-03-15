@@ -1,0 +1,37 @@
+{
+  "language": "Language",
+  "countries": {
+    "BY": {
+      "name": "Belarus",
+      "capital": "Minsk"
+    },
+    "EG": {
+      "name": "Egypt",
+      "capital": "Cairo"
+    },
+    "GB": {
+      "name": "England",
+      "capital": "London"
+    },
+    "FR": {
+      "name": "France",
+      "capital": "Paris"
+    },
+    "DE": {
+      "name": "Germany",
+      "capital": "Berlin"
+    },
+    "IT": {
+      "name": "Italy",
+      "capital": "Rome"
+    },
+    "CH": {
+      "name": "Bern",
+      "capital": "Switzerland"
+    },
+    "US": {
+      "name": "USA",
+      "capital": "Washington"
+    }
+  }
+}
