@@ -1,13 +1,12 @@
 .wrapper {
     background: #ffffff2c;
     height: fit-content;
-    // height: 80vh;
     height: fit-content;
     display: grid;
-    grid-template-areas: 
-    "photo name capital"
-    "photo widgets widgets"
-    "info info info";
+    grid-template-areas:
+        "photo name capital"
+        "photo widgets widgets"
+        "info info info";
     grid-template-rows: 1fr 6fr 4fr;
     grid-template-columns: 5fr 1fr 2fr;
     grid-gap: 10px;
@@ -15,37 +14,36 @@
 
     @media (max-width: 1025px) {
         height: fit-content;
-        grid-template-areas: 
-        "name capital"
-        "photo photo"
-        "widgets widgets"
-        "info info ";
+        grid-template-areas:
+            "name capital"
+            "photo photo"
+            "widgets widgets"
+            "info info ";
         grid-template-rows: 1fr 5fr 4fr 4fr;
-        grid-template-columns: 1fr 1fr;      
+        grid-template-columns: 1fr 1fr;
     }
 
     @media (max-width: 550px) {
         grid-template-rows: 1fr 3fr 4fr 8fr;
         grid-template-columns: 2fr 3fr;
-        padding: 10px;        
+        padding: 10px;
     }
 
     @media (max-width: 350px) {
         grid-template-rows: 1fr 3fr 5fr 12fr;
         grid-template-columns: 2fr 3fr;
-        padding: 10px;        
+        padding: 10px;
     }
 }
 
-
-.photo{
+.photo {
     grid-area: photo;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.name{
+.name {
     grid-area: name;
     display: flex;
     justify-content: center;
@@ -58,15 +56,15 @@
     border-radius: 5px;
     @media (max-width: 550px) {
         font-size: 20px;
-        font-weight: 500;       
+        font-weight: 500;
     }
     @media (max-width: 350px) {
         font-size: 18px;
-        font-weight: 500;       
+        font-weight: 500;
     }
 }
 
-.capital{
+.capital {
     grid-area: capital;
     display: flex;
     justify-content: center;
@@ -79,16 +77,16 @@
     border-radius: 5px;
     @media (max-width: 550px) {
         font-size: 20px;
-        font-weight: 500;       
+        font-weight: 500;
     }
 
     @media (max-width: 350px) {
         font-size: 18px;
-        font-weight: 500;       
+        font-weight: 500;
     }
 }
 
-.widgets{
+.widgets {
     grid-area: widgets;
     background-color: rgba(253, 253, 253, 0.37);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -96,7 +94,7 @@
     border-radius: 5px;
 }
 
-.info{
+.info {
     grid-area: info;
     font-size: 20px;
     padding: 10px;
