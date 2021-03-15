@@ -7,7 +7,6 @@ import { connect } from 'react-redux';
 import { getCountryObjectById } from '../../helpFunctions/helpFunctions';
 
 function CountryPage({ countryObj }) {
-    console.log(countryObj);
     return (
         <>
             <CountryPageHeader />
