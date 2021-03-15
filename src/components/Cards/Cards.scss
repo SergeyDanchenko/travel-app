@@ -1,7 +1,28 @@
 .cards-wrapper {
+  height: 89vh;
+  margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  height: 90vh;
   align-content: space-around;
+}
+
+@media (max-width: 1199px) {
+  .cards-wrapper {
+    padding: 10px 0;
+    width: 500px;
+    height: auto;
+  }
+}
+
+@media (max-width: 767px) {
+  .cards-wrapper {
+    width: 490px;
+  }
+}
+
+@media (max-width: 499px) {
+  .cards-wrapper {
+    width: 250px;
+  }
 }
