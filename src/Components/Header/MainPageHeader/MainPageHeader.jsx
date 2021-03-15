@@ -8,7 +8,7 @@ function MainPageHeader() {
     <Navbar bg="dark" variant="dark" className='justify-content-between'>
       <Container>
         <Container>
-          <Navbar.Brand href="#home">
+          <Navbar.Brand href="#">
             <img
               alt="Globe Logo"
               src={globeLogo}

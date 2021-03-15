@@ -11,7 +11,7 @@ function App() {
   return (
     <div>
       <Router>
-        <Route path='/home' component={Cards} />
+        <Route exact path='/' component={Cards} />
         <Route path='/country' component={CountryPage} />      
       </Router>
       <Footer />
