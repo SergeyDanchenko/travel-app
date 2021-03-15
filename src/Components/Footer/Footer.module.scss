@@ -6,25 +6,51 @@ $footer_header_text_color_hover:#e1e5eb;
     display: grid;
     background-color: $footer_header_color;
     color:$footer_header_text_color;   
+    height: 6vh;
+    @media (max-width: 770px) {
+        height:  95px;
+   }
+
+    @media (max-width: 450px) {
+        height: 110px
+    }
     
 }
 
 .container {
-    display: flex;
+    display: flex;    
     justify-content: space-between;
     align-items: center;
+    height: 100%;
     background-color: $footer_header_color;
     color:$footer_header_text_color;  
-    padding: 10px 0;    
-    height: 6vh; 
+    @media (max-width: 770px) {
+        flex-direction: column;
+        justify-content: space-around;
+   }
 }
 
 .contactsContainer {
-    display: flex;
+        display: flex;
       justify-content: space-between;
       text-align: center;
       padding: 0;
       width: 50%;
+      @media (max-width: 770px) {
+        width: 100%;
+   }
+
+   @media (max-width: 450px) {
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-between;
+}
+
+@media (max-width: 340px) {
+    flex-direction: column;
+    width: 70%;
+    justify-content: space-between;
+}
 }
 
 .contactsTitle{
@@ -65,6 +91,19 @@ $footer_header_text_color_hover:#e1e5eb;
         width: 15px
     }
 } 
+
+.logoYearContainer {
+    display: flex;    
+    justify-content: space-between;
+    width: 30%;
+    @media (max-width: 770px) {
+        width: 40%;
+   }
+
+   @media (max-width: 550px) {
+    width: 70%;
+}
+}
 
 .logo {
     width: 80px;    

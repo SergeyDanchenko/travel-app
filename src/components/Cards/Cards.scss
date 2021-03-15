@@ -19,17 +19,20 @@
     padding: 10px 0;
     width: 500px;
     height: auto;
+    justify-content: space-evenly;
   }
 }
 
 @media (max-width: 767px) {
   .cards-wrapper {
     width: 490px;
+    justify-content: center;
   }
 }
 
 @media (max-width: 499px) {
   .cards-wrapper {
     width: 250px;
+    justify-content: center;
   }
 }

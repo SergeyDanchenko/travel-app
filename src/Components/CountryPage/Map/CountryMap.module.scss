@@ -1,9 +1,27 @@
 .wrapper {
     height: 85vh;
     background: #0000002c !important;
+    @media (max-width: 1024px) {
+        height: 55vh;       
+    }  
+    
+    @media (max-width: 550px) {
+        height: 45vh;       
+    }  
 }
 
 .map{
     height: 100%;
     padding: 60px;
+    @media (max-width: 1024px) {
+        padding: 30px;        
+    }
+
+    @media (max-width: 550px) {
+        padding: 20px;        
+    }
+
+    @media (max-width: 380px) {
+        padding: 10px;        
+    }
 }

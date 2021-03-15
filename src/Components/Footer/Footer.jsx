@@ -36,6 +36,7 @@ function Footer() {
                         </Nav.Link>
                     </Nav.Item>
                 </Nav>
+                <div className={footer.logoYearContainer}>
                 <Nav className={footer.logoContainer}
                     activeKey="/home"
                     onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
@@ -47,6 +48,7 @@ function Footer() {
                     </Nav.Item>
                 </Nav>
                 <div className='year'>2021</div>
+                </div>
             </Container>
         </div>
     )
