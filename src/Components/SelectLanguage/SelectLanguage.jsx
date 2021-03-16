@@ -7,7 +7,7 @@ import language from './SelectLanguage.module.scss'
 
 const SelectLanguage = ({ lang, onLanguage }) => {
 
-  const { t, i18n} = useTranslation();
+  const { t, i18n } = useTranslation();
 
   const handleChange = (e) => {
     localStorage.setItem('lang', e.target.value);
@@ -20,9 +20,9 @@ const SelectLanguage = ({ lang, onLanguage }) => {
       <label>
         {t('language')}:
         <select value={lang} onChange={(e) => handleChange(e)} className={language.select}>
-          <option value="en">EN</option>
-          <option value="ru">RU</option>
-          <option value="ua">UA</option>
+          <option value="en">{t('langOptions.EN')}</option>
+          <option value="ru">{t('langOptions.RU')}</option>
+          <option value="ua">{t('langOptions.UA')}</option>
         </select>
       </label>
     </form>

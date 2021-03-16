@@ -14,10 +14,9 @@ function CountryPage({ countryObj }) {
             <CountryPageHeader />
             <Container>
                 <CountryInfo 
-                    countryName={countryObj.name}
-                    countryCapital={countryObj.capital}
                     countryImg={countryObj.imageUrl}
-                    countryInfo={countryObj.description}/>
+                    ISOCode={countryObj.ISOCode}
+                />
                 <CountryGallery countryImgGallery={countryObj.imageGallery}/>
                 <CountryMovie countryMovie={countryObj.videoUrl}/>
                 <CountryMap countryObj={countryObj}/>
