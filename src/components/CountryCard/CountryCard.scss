@@ -1,11 +1,11 @@
 .country-card-wrapper {
-  background-color: #FFA07A;
+  background: #ffffff85;
   width: 200px;
   height: 255px;
   padding: 5px;
   border-radius: 15%;
   margin: 10px 20px;
-  transition: .3s;
+  transition: 0.3s;
   color: black;
   text-decoration: none;
 
@@ -13,7 +13,7 @@
     width: 220px;
     height: 275px;
     margin: 0 10px;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
     cursor: pointer;
     text-decoration: none;
     color: black;
@@ -23,13 +23,12 @@
       height: 210px;
     }
   }
-  
+
   .country-img {
     border-radius: 15%;
     width: 190px;
     height: 190px;
-    transition: .3s;
-    // background-image: url('../../assets/images/london1.jpg');
+    transition: 0.3s;
   }
 
   .title-wrapper {

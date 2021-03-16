@@ -6,7 +6,7 @@ function Player({countryMovie}) {
         <ReactPlayer url={countryMovie} 
         controls='true'
         width='100%'
-        height='95%'
+        height='100%'
         />
     )
 }

@@ -11,7 +11,7 @@ class WeatherDisplay extends Component {
         const zip = this.props.zip;
         const URL = "http://api.openweathermap.org/data/2.5/weather?q=" +
             zip +
-            "&appid=b1b35bba8b434a28a0be2a3e1071ae5b&units=imperial";
+            "&appid=6898c186f92d0cd7184ea1df6ad87f20&units=imperial"; //0e3c05942a6b245092246fad2fe7108d
         fetch(URL)
             .then(res => res.json())
             .then(json => {
@@ -21,6 +21,7 @@ class WeatherDisplay extends Component {
     render() {
         const weatherData = this.state.weatherData;
         if (!weatherData) return <div>Loading</div>;
+        console.log(weatherData)
         const weather = weatherData.weather[0];
         const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
         return (
