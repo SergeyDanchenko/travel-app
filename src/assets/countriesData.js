@@ -207,7 +207,7 @@ const counrtiesData = [
       ],
       videoUrl: "https://www.youtube.com/watch?v=wSHXd-K-jIk&ab_channel=touropia",
       currency: "GBP",
-      ISOCode: "GB-ENG"
+      ISOCode: "GB"
   },
   {
       id: "3",
