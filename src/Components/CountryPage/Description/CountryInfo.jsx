@@ -1,7 +1,8 @@
 import { Container, Image } from 'react-bootstrap';
 import CountryDescription from './CountryDescription.module.scss';
+import DateAndTime from './../../Widget/dateAndTime'
 
-function CountryInfo({countryName, countryCapital, countryImg, countryInfo }) {
+function CountryInfo({countryName, countryCapital, countryImg, widgetsDate, countryInfo }) {
 // debugger;
 
     return (
@@ -11,7 +12,9 @@ function CountryInfo({countryName, countryCapital, countryImg, countryInfo }) {
             </Container>
             <Container className={CountryDescription.name}>{ countryName }</Container>
             <Container className={CountryDescription.capital}>{ countryCapital }</Container>
-            <Container className={CountryDescription.widgets}>Widgets</Container>
+            <Container className={CountryDescription.widgets}>
+                <DateAndTime months = { widgetsDate.nameData } /> 
+            </Container>
             <Container className={CountryDescription.info}>{ countryInfo }</Container>
         </div>
     )

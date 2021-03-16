@@ -15,6 +15,7 @@ function CountryPage({ countryObj }) {
                 countryName={countryObj.name}
                 countryCapital={countryObj.capital}
                 countryImg={countryObj.imageUrl}
+                widgetsDate={countryObj}
                 countryInfo={countryObj.description}/>
             <CountryGallery countryImgGallery={countryObj.imageGallery}/>
             <CountryMovie countryMovie={countryObj.videoUrl}/>
