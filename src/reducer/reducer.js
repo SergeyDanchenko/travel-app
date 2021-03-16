@@ -2,7 +2,7 @@ import countriesData from '../assets/countriesData';
 
 const initialState = {
   countriesData: countriesData,
-  pickedCountryCardId: null,
+  pickedCountryCardId: localStorage.getItem('pickedCountryCardId') || null,
   language: localStorage.getItem('lang') || 'en',
 };
 

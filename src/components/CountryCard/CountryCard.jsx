@@ -13,6 +13,7 @@ const CountryCard = ({ countryImg, onCardClick, cardId, ISOCode}) => {
   const { t } = useTranslation();
 
   const onClick = () => {
+    localStorage.setItem('pickedCountryCardId', cardId);
     onCardClick(cardId);
   };
 
