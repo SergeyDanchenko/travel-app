@@ -1,6 +1,23 @@
 .wrapper {
-    height: 80vh;
+    background: #ffffff2c;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 60px;
+
+    @media (max-width: 1024px) {
+        height: 55vh;
+        padding: 30px;
+    }
+
+    @media (max-width: 550px) {
+        height: 45vh;
+        padding: 20px;
+    }
+
+    @media (max-width: 380px) {
+        height: 45vh;
+        padding: 10px;
+    }
 }

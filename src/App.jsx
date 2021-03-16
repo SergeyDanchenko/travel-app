@@ -9,13 +9,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
   return (
-    <Container>
+    <div>
       <Router>
-        <Route path='/home' component={Cards} />
+        <Route exact path='/' component={Cards} />
         <Route path='/country' component={CountryPage} />      
       </Router>
       <Footer />
-    </Container>
+    </div>
   );
 }
 
