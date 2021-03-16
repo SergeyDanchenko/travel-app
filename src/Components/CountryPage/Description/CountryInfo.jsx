@@ -1,7 +1,8 @@
 import { Container, Image } from 'react-bootstrap';
 import CountryDescription from './CountryDescription.module.scss';
-import DateAndTime from './../../Widget/dateAndTime'
-import CurrencyRate from './../../Widget/rate'
+import DateAndTime from '../../Widget/DateAndTime'
+import CurrencyRate from './../../Widget/CurrencyRate'
+import WeatherDisplay from '../../Widget/WeatherDisplay'
 
 function CountryInfo({countryName, countryCapital, countryImg, widgetsDate, countryInfo }) {
 // debugger;
@@ -14,6 +15,7 @@ function CountryInfo({countryName, countryCapital, countryImg, widgetsDate, coun
             <Container className={CountryDescription.name}>{ countryName }</Container>
             <Container className={CountryDescription.capital}>{ countryCapital }</Container>
             <Container className={CountryDescription.widgets}>
+                <WeatherDisplay zip = {widgetsDate.zip} />
                 <DateAndTime months = { widgetsDate.nameData } />
                 <CurrencyRate rateValue = { widgetsDate.currency }/> 
             </Container>
