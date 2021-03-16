@@ -17,7 +17,9 @@ function CountryPage({ countryObj }) {
                     countryImg={countryObj.imageUrl}
                     ISOCode={countryObj.ISOCode}
                 />
-                <CountryGallery countryImgGallery={countryObj.imageGallery}/>
+                <CountryGallery 
+                    ISOCode={countryObj.ISOCode}
+                />
                 <CountryMovie countryMovie={countryObj.videoUrl}/>
                 <CountryMap countryObj={countryObj}/>
             </Container>
