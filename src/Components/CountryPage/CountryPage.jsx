@@ -16,6 +16,7 @@ function CountryPage({ countryObj }) {
                 <CountryInfo 
                     countryImg={countryObj.imageUrl}
                     ISOCode={countryObj.ISOCode}
+                    widgetsDate={countryObj}
                 />
                 <CountryGallery 
                     ISOCode={countryObj.ISOCode}
