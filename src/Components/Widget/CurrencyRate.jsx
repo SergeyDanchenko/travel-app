@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import CountryDescription from './../CountryPage/Description/CountryDescription.module.scss';
 
 class CurrencyRate extends Component {
     constructor(props) {
@@ -33,7 +34,7 @@ class CurrencyRate extends Component {
          const currencyUsd = Math.ceil((this.state.usd / this.state.localСurrency) * 100) / 100
          const currencyRub = Math.ceil((this.state.rub / this.state.localСurrency) * 100) / 100
         return (
-            <div>
+            <div className={CountryDescription.currency}>
                 <h3> 1 { this.state.rate }</h3>
                 <span> { currencyEur }EUR </span>
                 <span> { currencyUsd }USD </span>

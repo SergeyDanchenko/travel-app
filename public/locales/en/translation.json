@@ -6,6 +6,9 @@
     "UA": "UA"
   },
   "capital": "Capital",
+  "temperature": "Temperature",
+  "date": "Date",
+  "time": "Time",
   "countries": {
     "BY": {
       "name": "Belarus",

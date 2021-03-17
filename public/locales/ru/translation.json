@@ -6,6 +6,9 @@
     "UA": "УКР"
   },
   "capital": "Столица",
+  "temperature": "Температура",
+  "date": "Дата",
+  "time": "Время",
   "countries": {
     "BY": {
       "name": "Беларусь",
