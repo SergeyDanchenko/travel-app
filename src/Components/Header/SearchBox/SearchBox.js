@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { getCountriesObjectsByIds } from '../../../helpFunctions/helpFunctions';
 import { connect } from 'react-redux';
 import { onSearchInputChange } from '../../../actions/actions';
@@ -12,12 +12,14 @@ const SearchBox = ({ inputValue, onInputChange }) =>{
     };
 
     return (
-        <input 
+        <input
+            id='search' 
             type='search'
             className='search'
             placeholder='Country name...'
             value={inputValue}
             onChange={handleChange}
+            autoFocus={true}
         />
     )
 }
