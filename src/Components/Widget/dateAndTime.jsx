@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withTranslation } from 'react-i18next';
 import moment from 'moment';
 import 'moment-timezone'; 
 import CountryDescription from './../CountryPage/Description/CountryDescription.module.scss';
@@ -28,13 +29,14 @@ class DateAndTime extends Component {
     }
 
     render() {
+        const { t } = this.props;
         return (
             <div className={CountryDescription.time}>
                 <div>
-                    Date: {this.state.date.date}
+                    {t('date')}: {this.state.date.date}
                 </div>
                 <div>
-                    Time: {this.state.date.time}
+                    {t('time')}: {this.state.date.time}
                 </div>           
             </div>
         );
@@ -48,4 +50,4 @@ function material(citi) {
     return dateObj;
 }
 
-export default DateAndTime;
+export default withTranslation()(DateAndTime);

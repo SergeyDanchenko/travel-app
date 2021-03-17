@@ -6,6 +6,9 @@
     "UA": "УКР"
   },
   "capital": "Столиця",
+  "temperature": "Температура",
+  "date": "Дата",
+  "time": "Час",
   "countries": {
     "BY": {
       "name": "Білорусь",

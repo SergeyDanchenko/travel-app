@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import { withTranslation } from 'react-i18next';
 import CountryDescription from './../CountryPage/Description/CountryDescription.module.scss';
 
 
@@ -27,12 +27,14 @@ class WeatherDisplay extends Component {
         const weather = weatherData.weather[0];
         const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
         const celsius = Math.round((weatherData.main.temp - 32) / 1.8)
+        const { t } = this.props;
         return (
             <div className={CountryDescription.weather}>
                 <img src={iconUrl} alt={weatherData.description} />
-                <p> Temperature: { celsius } C°</p>
+                <p> {t('temperature')}: { celsius } C°</p>
             </div>
           );
     }
 }
- export default WeatherDisplay;
+
+export default withTranslation()(WeatherDisplay);
