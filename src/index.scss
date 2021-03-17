@@ -15,7 +15,13 @@ code {
 .leaflet-container {
   width: 100%;
   height: 100%;
+
+  .leaflet-control-zoom-in, .leaflet-control-zoom-out, .leaflet-control-fullscreen-button {
+    background-color: #6A5ACD;
+  }
 }
+
+
 
 .navbar {
   height: 5vh;

@@ -28,7 +28,7 @@ function CountryMap({ countryObj }) {
     return (
         <div className={map.wrapper}>
             <div className={map.map}>
-                <MapContainer crs={L.CRS.EPSG3395} fullscreenControl={true} center={[longitude, latitude]} zoom={7} scrollWheelZoom={false}>
+                <MapContainer crs={L.CRS.EPSG3395} fullscreenControl={true} center={[longitude, latitude]} zoom={7} scrollWheelZoom={true}>
                     <TileLayer
                         attribution='&copy; <a href="https://yandex.net/">yandex.net</a> contributors'
                         url="https://vec02.maps.yandex.net/tiles?l=map&v=19.12.23-0&x={x}&y={y}&z={z}&scale=1.25&lang=en"
