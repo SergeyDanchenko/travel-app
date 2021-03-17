@@ -33,10 +33,14 @@ class DateAndTime extends Component {
         return (
             <div className={CountryDescription.time}>
                 <div>
-                    {t('date')}: {this.state.date.date}
+                    {this.state.date.dayOfWeek}
+                </div>
+
+                <div>
+                    {this.state.date.month}, {this.state.date.date}
                 </div>
                 <div>
-                    {t('time')}: {this.state.date.time}
+                    {this.state.date.time}
                 </div>           
             </div>
         );
@@ -44,9 +48,11 @@ class DateAndTime extends Component {
 }
 
 function material(citi) {
-    const formattedDT = moment.tz(citi).format('DD.MM.YYYY-kk:mm:ss');
-    const date = formattedDT.split('-')
-    const dateObj = { date: date[0], time: date[1]}
+    const formattedDT = moment.tz(citi).format('LLLL'); 
+    const formattedTM = moment.tz(citi).format('kk:mm:ss');
+    const date = formattedDT.split(',')
+    const dateTM = date[1].split(' ')
+    const dateObj = { dayOfWeek: date[0], date: dateTM[2], month: dateTM[1], time: formattedTM }
     return dateObj;
 }
 
