@@ -5,6 +5,7 @@ import 'moment-timezone';
 import CountryDescription from './../CountryPage/Description/CountryDescription.module.scss';
 
 
+
 class DateAndTime extends Component {
     constructor(props) { 
         super(props);
@@ -33,11 +34,11 @@ class DateAndTime extends Component {
         return (
             <div className={CountryDescription.time}>
                 <div>
-                    {this.state.date.dayOfWeek}
+                    {t(`daysOfWeek.${this.state.date.dayOfWeek}`)}
                 </div>
 
                 <div>
-                    {this.state.date.month}, {this.state.date.date}
+                    {t(`months.${this.state.date.month}`)}, {this.state.date.date}
                 </div>
                 <div>
                     {this.state.date.time}
