@@ -17,7 +17,7 @@ const SelectLanguage = ({ lang, onLanguage }) => {
 
   return (
     <form className={language.container}>
-      <label>
+      <label className = {language.label}>
         {t('language')}:
         <select value={lang} onChange={(e) => handleChange(e)} className={language.select}>
           <option value="en">{t('langOptions.EN')}</option>

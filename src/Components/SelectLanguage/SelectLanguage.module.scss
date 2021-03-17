@@ -2,6 +2,22 @@
     color:white;          
 }
 
+.label {
+    display: flex;
+    width: 128px;
+    justify-content: flex-end;
+    margin: 0;
+}
+
 .select {
+    background:white;
+    color: #6c757d;
+    padding: 1px;
+    width: 50px;
+    height: 25px;
+    border: none;
+    font-size: 14px;
     margin-left: 5px;
+    outline: none;
+    border-radius: 3px;
 }
