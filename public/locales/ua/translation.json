@@ -5,6 +5,29 @@
     "RU": "РОС",
     "UA": "УКР"
   },
+  "daysOfWeek": {
+    "Monday": "Понеділок",
+    "Tuesday": "Вівторок",
+    "Wednesday": "Середа",
+    "Thursday": "Четверг",
+    "Friday": "Четвер",
+    "Saturday": "Субота",
+    "Sunday": "Неділя"
+  },
+  "months": {
+    "January": "Січень",
+    "February": "Лютий",
+    "March": "Март",
+    "April": "Березень",
+    "May": "Травень",
+    "June": "Червень",
+    "July": "Липень",
+    "August": "Август",
+    "September": "Серпень",
+    "October": "Жовтень",
+    "November": "Листопад",
+    "December": "Грудень"
+  },
   "capital": "Столиця",
   "temperature": "Температура",
   "date": "Дата",
