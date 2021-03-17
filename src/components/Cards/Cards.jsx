@@ -3,6 +3,7 @@ import CountryCard from '../CountryCard/CountryCard';
 import MainPageHeader from '../Header/MainPageHeader/MainPageHeader'
 import { connect } from 'react-redux';
 import { onCountryCardClick } from '../../actions/actions';
+import { getCountriesObjectsByIds } from '../../helpFunctions/helpFunctions';
 
 import './Cards.scss';
 import { Container } from 'react-bootstrap';
@@ -30,7 +31,7 @@ const Cards = ({ countries, onCardClick }) => {
 
 const mapStateToProps = (state) => {
   return {
-    countries: state.countriesData,
+    countries: getCountriesObjectsByIds(state.countriesData, state.renderCardsIds),
   }
 };
 

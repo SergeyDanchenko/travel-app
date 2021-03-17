@@ -3,7 +3,6 @@ import { Container, Navbar } from 'react-bootstrap';
 import globeLogo from './../../../assets/images/globeLogo.png';
 import SearchBox from './../SearchBox/SearchBox';
 
-
 function MainPageHeader() {
   return (
     <Navbar bg="dark" variant="dark" className='justify-content-between'>
@@ -19,7 +18,7 @@ function MainPageHeader() {
             />
          Travel-app
         </Navbar.Brand>
-            <SearchBox placeholder = 'Name cantry...' handleChange = {(e) => console.log(e.target.value)}/>
+          <SearchBox placeholder = 'Name cantry...'/>
           <SelectLanguage />
         </Container>
       </Container>
