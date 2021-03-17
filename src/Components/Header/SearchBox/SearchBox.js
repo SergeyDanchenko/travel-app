@@ -20,6 +20,7 @@ const SearchBox = ({ inputValue, onInputChange }) =>{
             value={inputValue}
             onChange={handleChange}
             autoFocus={true}
+            autocomplete="off"
         />
     )
 }
