@@ -28,15 +28,22 @@ class DateAndTime extends Component {
     render() {
         return (
             <div>
-                <h3>{this.state.date}</h3>
+                <div>
+                    Date: {this.state.date.date}
+                </div>
+                <div>
+                    Time: {this.state.date.time}
+                </div>           
             </div>
         );
     }
 }
 
 function material(citi) {
-    const formattedDT = moment.tz(citi).format('DD.MM.YYYY -- hh:mm:ss a');
-    return formattedDT;
+    const formattedDT = moment.tz(citi).format('DD.MM.YYYY-kk:mm:ss');
+    const date = formattedDT.split('-')
+    const dateObj = { date: date[0], time: date[1]}
+    return dateObj;
 }
 
 export default DateAndTime;

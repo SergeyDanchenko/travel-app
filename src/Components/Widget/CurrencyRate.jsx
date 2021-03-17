@@ -34,7 +34,7 @@ class CurrencyRate extends Component {
          const currencyRub = Math.ceil((this.state.rub / this.state.localСurrency) * 100) / 100
         return (
             <div>
-                <h3> 1 { this.state.rate } = </h3>
+                <h3> 1 { this.state.rate }</h3>
                 <span> { currencyEur }EUR </span>
                 <span> { currencyUsd }USD </span>
                 <span> { currencyRub }RUB </span>
