@@ -1,6 +1,7 @@
 import SelectLanguage from '../../SelectLanguage/SelectLanguage'
 import { Container, Navbar, Nav } from 'react-bootstrap';
-import globeLogo from './../../../assets/images/globeLogo.png'
+import globeLogo from './../../../assets/images/globeLogo.png';
+import SearchBox from './../SearchBox/SearchBox';
 
 
 function MainPageHeader() {
@@ -18,7 +19,9 @@ function MainPageHeader() {
             />
          Travel-app
         </Navbar.Brand>
-          <div style={{ color: 'white' }}>Country search input </div>
+          {/* <div style={{ color: 'white' }}> */}
+            <SearchBox placeholder = 'Name cantry...' handleChange = {(e) => console.log(e.target.value)}/>
+          {/* </div> */}
           <SelectLanguage />
         </Container>
       </Container>
