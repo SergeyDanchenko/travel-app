@@ -1,5 +1,5 @@
 import SelectLanguage from '../../SelectLanguage/SelectLanguage'
-import { Container, Navbar, Nav } from 'react-bootstrap';
+import { Container, Navbar } from 'react-bootstrap';
 import globeLogo from './../../../assets/images/globeLogo.png';
 import SearchBox from './../SearchBox/SearchBox';
 

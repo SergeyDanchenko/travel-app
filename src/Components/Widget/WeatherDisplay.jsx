@@ -1,5 +1,8 @@
 import React, { Component } from "react";
 
+import CountryDescription from './../CountryPage/Description/CountryDescription.module.scss';
+
+
 class WeatherDisplay extends Component {
     constructor(props) {
         super(props);
@@ -25,9 +28,9 @@ class WeatherDisplay extends Component {
         const iconUrl = "http://openweathermap.org/img/w/" + weather.icon + ".png";
         const celsius = Math.round((weatherData.main.temp - 32) / 1.8)
         return (
-            <div>
+            <div className={CountryDescription.weather}>
                 <img src={iconUrl} alt={weatherData.description} />
-                <p> Temp: { celsius } C°</p>
+                <p> Temperature: { celsius } C°</p>
             </div>
           );
     }

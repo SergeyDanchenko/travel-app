@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import moment from 'moment';
 import 'moment-timezone'; 
+import CountryDescription from './../CountryPage/Description/CountryDescription.module.scss';
+
 
 class DateAndTime extends Component {
     constructor(props) { 
@@ -27,7 +29,7 @@ class DateAndTime extends Component {
 
     render() {
         return (
-            <div>
+            <div className={CountryDescription.time}>
                 <div>
                     Date: {this.state.date.date}
                 </div>

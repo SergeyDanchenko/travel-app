@@ -16,11 +16,11 @@ function CountryInfo({countryImg, ISOCode, widgetsDate }) {
             </div>
             <div className={CountryDescription.name}>{ t(`countries.${ISOCode}.name`) }</div>
             <div className={CountryDescription.capital}>{ t('capital') }: { t(`countries.${ISOCode}.capital`) }</div>
-            <div className={CountryDescription.widgets}>
+            {/* <div className={CountryDescription.widgets}> */}
                 <WeatherDisplay zip = {widgetsDate.zip} />
                 <DateAndTime months = { widgetsDate.nameData } />
                 <CurrencyRate rateValue = { widgetsDate.currency }/>
-            </div>
+            {/* </div> */}
             <div className={CountryDescription.info}>{ t(`countries.${ISOCode}.info`) }</div>
         </div>
     )
