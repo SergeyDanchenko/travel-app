@@ -19,9 +19,7 @@ function MainPageHeader() {
             />
          Travel-app
         </Navbar.Brand>
-          {/* <div style={{ color: 'white' }}> */}
             <SearchBox placeholder = 'Name cantry...' handleChange = {(e) => console.log(e.target.value)}/>
-          {/* </div> */}
           <SelectLanguage />
         </Container>
       </Container>

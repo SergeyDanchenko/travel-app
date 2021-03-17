@@ -11,10 +11,10 @@ function Footer() {
                 <Nav className={footer.contactsContainer}
                     activeKey="/home"
                     onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-                > 
+                >
                     <Nav.Item className={footer.contactItem}>
                         <Nav.Link className={footer.link} href="https://github.com/IrinaKorbut">
-                            <div className={footer.contactsTitle}>Irina Korbut</div>                            
+                            <div className={footer.contactsTitle}>Irina Korbut</div>
                             <Image className={footer.icon} src={gitHubIcon} fluid />
                         </Nav.Link>
                     </Nav.Item>
@@ -30,24 +30,19 @@ function Footer() {
                             <Image className={footer.icon} src={gitHubIcon} fluid />
                         </Nav.Link>
                     </Nav.Item>
-                    <Nav.Item className={footer.contactItem}>
-                        <Nav.Link className={footer.link} href="https://youtu.be/f-84lbyvpgE">
-                            <Image className={footer.icon} src={YouTubeIcon} fluid />
-                        </Nav.Link>
-                    </Nav.Item>
                 </Nav>
                 <div className={footer.logoYearContainer}>
-                <Nav className={footer.logoContainer}
-                    activeKey="/home"
-                    onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
-                > 
-                    <Nav.Item className={footer.logo}>
-                        <Nav.Link className={footer.link} href="https://rs.school/">
-                            <Image className={footer.logo} src={logo_rsSchool} fluid />
-                        </Nav.Link>
-                    </Nav.Item>
-                </Nav>
-                <div className='year'>2021</div>
+                    <Nav className={footer.logoContainer}
+                        activeKey="/home"
+                        onSelect={(selectedKey) => alert(`selected ${selectedKey}`)}
+                    >
+                        <Nav.Item className={footer.logo}>
+                            <Nav.Link className={footer.link} href="https://rs.school/">
+                                <Image className={footer.logo} src={logo_rsSchool} fluid />
+                            </Nav.Link>
+                        </Nav.Item>
+                    </Nav>
+                    <div className='year'>2021</div>
                 </div>
             </Container>
         </div>
