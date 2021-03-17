@@ -10,10 +10,14 @@ import switzerland from './images/switzerland1.jpg';
 const counrtiesData = [
   {
       id: "0",
-      capital: "Minsk",
+      capital_en: "Minsk",
+      capital_ru: "Минск",
+      capital_ua: "Мінськ",
       nameData: "Europe/Minsk",
       zip: "220030",
-      name: "Belarus",
+      name_en: "Belarus",
+      name_ru: "Беларусь",
+      name_ua: "Білорусь",
       capitalLocation: {
           coordinates: [
             27.561523,
@@ -41,10 +45,14 @@ const counrtiesData = [
   },
   {
       id: "1",
-      capital: "Cairo",
+      capital_en: "Cairo",
+      capital_ru: "Каир",
+      capital_ua: "Каїр",
       nameData: "Africa/Cairo",
       zip: "11566",
-      name: "Egypt",
+      name_en: "Egypt",
+      name_ru: "Египет",
+      name_ua: "Єгипет",
       capitalLocation: {
           coordinates: [
             31.235712,
@@ -67,10 +75,14 @@ const counrtiesData = [
   },
   {
       id: "2",
-      capital: "London",
+      capital_en: "London",
+      capital_ru: "Лондон",
+      capital_ua: "Лондон",
       nameData: "Europe/London",
       zip: "56273",
-      name: "England",
+      name_en: "England",
+      name_ru: "Англия",
+      name_ua: "Англія",
       capitalLocation: {
           coordinates: [
             -0.127758,
@@ -93,10 +105,14 @@ const counrtiesData = [
   },
   {
       id: "3",
-      capital: "Paris",
+      capital_en: "Paris",
+      capital_ru: "Париж",
+      capital_ua: "Париж",
       nameData: "Europe/Paris",
       zip: "75056",
-      name: "France",
+      name_en: "France",
+      name_ru: "Франция",
+      name_ua: "Франція",
       capitalLocation: {
           coordinates: [
             2.352222,
@@ -119,10 +135,14 @@ const counrtiesData = [
   },
   {
       id: "4",
-      capital: "Berlin",
+      capital_en: "Berlin",
+      capital_ru: "Берлин",
+      capital_ua: "Берлін",
       nameData: "Europe/Berlin",
       zip: "12307",
-      name: "Germany",
+      name_en: "Germany",
+      name_ru: "Германия",
+      name_ua: "Німеччина",
       capitalLocation: {
           coordinates: [
             13.404954,
@@ -145,10 +165,14 @@ const counrtiesData = [
   },
   {
       id: "5",
-      capital: "Rome",
+      capital_en: "Rome",
+      capital_ru: "Рим",
+      capital_ua: "Рим",
       nameData: "Europe/Rome",
       zip: "30165",
-      name: "Italy",
+      name_en: "Italy",
+      name_ru: "Италия",
+      name_ua: "Італія",
       capitalLocation: {
           coordinates: [
             12.496365,
@@ -171,10 +195,14 @@ const counrtiesData = [
   },
   {
       id: "6",
-      capital: "Bern",
+      capital_en: "Bern",
+      capital_ru: "Берн",
+      capital_ua: "Берн",
       nameData: "Europe/Zurich",
       zip: "3003",
-      name: "Switzerland",
+      name_en: "Switzerland",
+      name_ru: "Швейцария",
+      name_ua: "Швейцарія",
       capitalLocation: {
           coordinates: [
             7.447447,
@@ -197,10 +225,14 @@ const counrtiesData = [
   },
   {
       id: "7",
-      capital: "Washington",
+      capital_en: "Washington",
+      capital_ru: "Вашингтон",
+      capital_ua: "Вашингтон",
       nameData: "America/La_Paz",
       zip: "98055",
-      name: "USA",
+      name_en: "USA",
+      name_ru: "США",
+      name_ua: "США",
       capitalLocation: {
           coordinates: [
             -77.0147,
